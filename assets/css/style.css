@@ -1,0 +1,16 @@
+/* Main page  */
+
+/* Dont Enable
+May cause seizures
+
+body {
+    background-image: url('../images/bedazzled.gif');
+} */
+
+.page-container {
+    text-align: center;
+}
+
+img {
+    margin: 0px 10px;
+}

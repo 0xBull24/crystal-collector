@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Darron's Cystral Collector</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="page-container">
+            <div class="row">
+                <div class="jumbotron col-12">
+                    <h1 class="display-3">Welcome to the Crystal Collector</h1>
+                    <hr class="my-2">
+                    <p>You will be given a random number at the beginning of the game.</p>
+                    <p>There are 4 crystals below, each with a random score associated. By clicking on one of the crystals it will be added to your score.</p>
+                    <p>The objective of this game is to rech the target score without going over.</p>
+                    <p>If you go over the target score, you will accrue a loss.</p>
+                    <br>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" role="button" id="reset">Start Over?</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Target Score / Wins & Losses -->
+            <div class="row mb-5">
+                <div class="card col mr-5">
+                    <div class="card-body">
+                        <h4 class="card-title">Target Score</h4>
+                        <p class="card-text target">Target Score is: </p>
+                        <p class="card-text playerscore">Your Score is: </p>
+                        <span class="conditional"></span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body col">
+                        <h4 class="card-title">Wins & Losses</h4>
+                        <p class="card-text wins">Wins: 0</p>
+                        <p class="card-text losses">Losses: 0</p>
+                        <p class="card-text clicks">Clicks: 0</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Crystal Row -->
+            <div class="row">
+                <div class="card col-12">
+                    <div class="card-body">
+                        <h4 class="card-title">Crystals</h4>
+                        <img id='blue' src="./assets/images/blue_gem.png" alt="blue gem">
+                        <img id="orange" src="./assets/images/orange_gem.png" alt="orange gem">
+                        <img id="purple" src="./assets/images/purple_gem.png" alt="purple gem">
+                        <img id="red" src="./assets/images/red_gem.png" alt="red gem">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  </body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="./assets/js/game.js"></script>
+</html>
